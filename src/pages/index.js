@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
+import stylesB from '@/styles/Button.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,12 +27,16 @@ export default function Home() {
         <div className={styles.center}>
           
           <h1>Sitio Bajo Construccion</h1>
+
         
         </div>
 
+          
         <div>
 
-          
+        <a href='mailto:ventas@ssiguate.com'><button type='submit' className={stylesB.button}> CONTACTAR</button></a>
+
+                  
         </div>
       </main>
     </>
